@@ -1,0 +1,26 @@
+<section class="container" id="portfolio">
+    <div class="main-title">
+        <h2>My <span>Portfolio</span><span class="bg-text">My Work</span></h2>
+    </div>
+    <p class="port-text">
+        Here is some of my work that I've done.
+    </p>
+    <div class="portfolios">
+        <div class="portfolio-item" *ngFor="let project of projects">
+            <div class="image">
+                <img src="../../assets/img/Gorana-Food-House.gif" alt="">
+            </div>
+            <div class="hover-items">
+                <h3> {{project.name}} </h3>
+                <p> {{project.summary}} </p>
+                <div class="icons">
+                    <a href={{project.link}} class="icon">
+                        <fa-icon [icon]="faGithub"></fa-icon>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+</section>
