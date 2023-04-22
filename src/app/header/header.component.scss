@@ -1,8 +1,11 @@
 
 //Controls
 header{
-    position: relative;
+    position: fixed;
+    width: 100%;
+    top: 0;
     z-index: 10;
+    // background-color: var(--color-primary);
     // top: 0%;
     // left: 50%;
     // transform: translateX(-50%);

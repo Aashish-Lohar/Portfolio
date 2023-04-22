@@ -8,7 +8,7 @@
     <div class="portfolios">
         <div class="portfolio-item" *ngFor="let project of projects">
             <div class="image">
-                <img src="../../assets/img/Gorana-Food-House.gif" alt="">
+                <img src={{project.imgUrl}} alt="">
             </div>
             <div class="hover-items">
                 <h3> {{project.name}} </h3>

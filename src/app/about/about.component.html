@@ -10,7 +10,7 @@
                 I am a creative Frontend Engineer and a Self-Learner. I have always been passionate about everything related to technology and programming, especially the web professions, which I made my career by always giving the best I can as a Web Developer. I always find coding a very engaging hobby, bringing a Code up to life & taking shape step-by-step is a blast. Besides coding, I like to travel to new places and discover new ideas.
             </p>
             <div class="btn-con">
-                <a href="#" class="main-btn">
+                <a href="https://drive.google.com/file/d/1T9WKRv8V4T8uDiJ3FbsH5XxgrfFLDKsV/view?usp=share_link" target="_blank" class="main-btn">
                     <span class="btn-text">Download CV</span>
                     <span class="btn-icon"> <fa-icon [icon]="faDownload"></fa-icon> </span>
                 </a>
@@ -75,9 +75,9 @@
                 </div>
                 <p class="tl-duration">{{exp.joining_date}} - {{exp.leaving_date}} </p>
                 <h5> {{exp.position}} <span> - {{exp.company}} </span></h5>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
-                </p>
+                <ul>
+                    <li style="list-style:circle;" *ngFor="let workResp of exp.workResponsibility">{{workResp}} </li>
+                </ul>
             </div>
         </div>
         <div class="timeline" *ngIf="!work">
@@ -87,9 +87,6 @@
                 </div>
                 <p class="tl-duration">{{exp.joining_year}} - {{exp.passing_year}} </p>
                 <h5> {{exp.graduation}} <span> - {{exp.institute}} </span></h5>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
-                </p>
             </div>
         </div>
         

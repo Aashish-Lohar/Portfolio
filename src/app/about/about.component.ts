@@ -17,8 +17,8 @@ export class AboutComponent {
     {skill:'JavaScript',progress:'75%'},
     {skill:'TypeScript',progress:'70%'},
     {skill:'Angular',progress:'75%'},
-    {skill:'Node.js',progress:'70%'},
-    {skill:'MongoDB',progress:'70%'},
+    {skill:'Node.js',progress:'60%'},
+    {skill:'MongoDB',progress:'60%'},
     {skill:'BootStrap',progress:'80%'},
     {skill:'Angular Material',progress:'85%'},
     {skill:'Python',progress:'70%'},
@@ -26,8 +26,21 @@ export class AboutComponent {
   ]
 
   experience = [
-    {company:'Persistent Systems', joining_date:"Feb 2022",leaving_date:"present", position:"Software Engineer"},
-    {company:'Lucent Innovations', joining_date:"August 2021",leaving_date:"December 2021", position:"Trainee Software Developer"},
+    {
+      company:'Persistent Systems', joining_date:"Feb 2022",leaving_date:"present", position:"Software Engineer",
+      workResponsibility:`Working as Angular developer for our client.
+      Developing and maintaining Angular applications for web and mobile interfaces.
+      Working to integrate backend APIs with front-end.
+      Developed cart pages and its functionalities.
+      Developing requested and responsive UI by collaborating with designing team.
+      Maintaining and sharing the data across SPA using RxJS and Services`.split('\n')
+    },
+    {
+      company:'Lucent Innovations', joining_date:"August 2021",leaving_date:"December 2021", position:"Trainee Software Developer",
+      workResponsibility:`Learnt front-end development in Shopify
+      Created product pages for an ecommerce.
+      Created Shopify themes and handled cart using Shopify cart api`.split('\n')
+    },
   ]
 
   education = [
