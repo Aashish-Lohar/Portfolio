@@ -8,6 +8,7 @@ import {faAdjust} from '@fortawesome/free-solid-svg-icons';
 export class AppComponent {
   faAdjust = faAdjust;
   isDarkMode = false;
+  title:string = 'portfolio'
   constructor(private renderer:Renderer2){}
 
   // ngOnInit(){
